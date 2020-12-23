@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1000px;
+}
+.dropdown-menu {
+    border: none;
+}
+
+
+.navbar-collapse {
+    
+}
+
+header {
+    position: relative;
+}
+video {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.header-content {
+    position: absolute;
+}
