@@ -92,3 +92,23 @@ header .header-cta:hover{
   position: relative;
   z-index: 3;
 }
+
+.grey-text {
+  color:#7f848c;
+}
+
+.about-us .container .row div:last-child{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+}
+
+.about-us .container .row div:last-child img:first-child {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.about-us .container .row div:last-child img:last-child {
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 2;
+  z-index: 1;
+}
