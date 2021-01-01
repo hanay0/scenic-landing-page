@@ -4,6 +4,27 @@
   box-sizing: border-box;
 }
 
+/* start navbar styles and resets */
+.bg-transparent.greyish {
+  background-color: rgba(134, 134, 134, .9) !important;
+}
+
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+
+@media(max-width: 991px) {
+  .navbar {
+    background-color: rgba(134, 134, 134, .9) !important;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+/* end navbar styles and resets */
 
 /* start header styles */
 header {
@@ -20,7 +41,7 @@ header::after {
   z-index: 2;
   width: 100%;
   height: 280px;
-  background-color: #FFF;
+  background-color: #FFFFFF;
   position: absolute;
   bottom: -200px;
   transform: skewY(-7deg);
@@ -103,6 +124,12 @@ header .header-cta:hover {
   grid-template-columns: 1fr 2fr 1fr 2fr;
 }
 
+@media(max-width:768px) {
+  .about-us .container .row div:last-child {
+    grid-template-columns: auto;
+  }
+}
+
 .about-us .container .row div:last-child img:first-child {
   grid-column: 2 / span 2;
   grid-row: 1 / span 2;
@@ -123,4 +150,59 @@ header .header-cta:hover {
 
 .stats .container .row p {
   font-size: 1.7rem;
+}
+
+/* end statistics section */
+
+/* start our services section */
+.service {
+  padding: 20px 0;
+  background: #FFFFFF;
+}
+
+
+
+.service span {
+  display: block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+.service span::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(57 141 232 / 22%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.service span i{
+  color: #FFFFFF;
+}
+
+.service:hover.service span {
+  background-color: #FFFFFF;
+}
+.service:hover.service span i {
+  color: #007bff;
 }
